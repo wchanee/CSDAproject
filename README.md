@@ -50,8 +50,8 @@ cd urban-parking-management
 - Replace your-username with your actual GitHub username.
 
 4. Set Up the Python Environment
-Create a Virtual Environment
-It’s best to use a virtual environment for Python projects to manage dependencies separately.
+- Create a Virtual Environment
+- It’s best to use a virtual environment for Python projects to manage dependencies separately.
 - Open VSCode’s integrated terminal (if not already open) and run the following command to create a virtual environment:
 ```bash
 python -m venv venv
