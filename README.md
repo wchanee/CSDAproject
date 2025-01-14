@@ -56,13 +56,11 @@ It’s best to use a virtual environment for Python projects to manage dependenc
 ```bash
 python -m venv venv
 ```
-
 - Activate the virtual environment:
 ```bash
 source venv/bin/activate
 ```
-Once the virtual environment is activated, you should see (venv) at the beginning of the terminal prompt.
-
+- Once the virtual environment is activated, you should see (venv) at the beginning of the terminal prompt.
 - Run the following command to install the required dependencies:
 ```bash
 pip install -r requirements.txt
@@ -78,10 +76,11 @@ pip install ultralytics
 - Ensure that your dataset is in the proper folder (e.g., data/images/ for the image files and data/labels/ for the label files). The dataset should be configured correctly in your project (likely in a YAML file or similar).
 
 7. Run the app.py Script
+- Run it directly from the terminal by typing:
 ```bash
 python app.py
 ```
 
 8. Access the Application
-If app.py is running a web-based application (e.g., using Flask or FastAPI), you should be able to open a browser and go to the address http://localhost:5000/ (or whatever port your app is configured to run on). This should bring up the interface where you can interact with the parking management system.
-If your project uses something like a GUI or a different interface, follow the on-screen instructions to interact with the system.
+- If app.py is running a web-based application (e.g., using Flask or FastAPI), you should be able to open a browser and go to the address http://localhost:5000/ (or whatever port your app is configured to run on). This should bring up the interface where you can interact with the parking management system.
+- If your project uses something like a GUI or a different interface, follow the on-screen instructions to interact with the system.
