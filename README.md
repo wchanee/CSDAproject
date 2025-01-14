@@ -28,31 +28,60 @@ This project leverages **machine learning**, **image processing**, and **urban p
 
 ---
 
-### ？How to Run the Project on Localhost:
-Follow these steps to set up and run this PHP project on your local machine:
+### ？How to Run the Project in VSCode:
+Follow these steps to set up and run this Python project on your vccode:
 
-1. Install PHP
-Make sure PHP is installed on your system. To check, run:
-- If PHP is not installed, download and install it from [PHP net](https://www.php.net/downloads).
-```bash
-php -v
-```
+1. Install Python
+Make sure Python is installed on your system.
+- If Python is not installed, download and install it from [Python](https://www.python.org/downloads/).
 
-2. Install a Local Server **(Additional)**
-- [XAMPP](https://www.apachefriends.org/download.html)
-
-3. Install the PHP Extension for VS Code
+2. Install the Python Extension for VS Code
 - Open VS Code.
 - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar or pressing **Ctrl+Shift+X** / **Cmd+Shift+X**.
-- Search for “PHP” and install the extension provided by felixfbecker or any other preferred extension.
+- Search for “Python” and install the extension by Microsoft.
 
-4. Run the PHP File
-- Open the terminal in VS Code by pressing **Ctrl+`** or going to View > Terminal.
-- Navigate to the directory containing your PHP file using the cd command:
+3. Clone the Repository
+- Open VSCode and go to Terminal > New Terminal.
+- Run the following command to clone your repository:
 ```bash
-cd path/to/your/php/file
+git clone https://github.com/your-username/urban-parking-management.git
+cd urban-parking-management
 ```
-- Run the PHP file with the following command:
+- Replace your-username with your actual GitHub username.
+
+4. Set Up the Python Environment
+Create a Virtual Environment
+It’s best to use a virtual environment for Python projects to manage dependencies separately.
+- Open VSCode’s integrated terminal (if not already open) and run the following command to create a virtual environment:
 ```bash
-php index.php
+python -m venv venv
 ```
+
+- Activate the virtual environment:
+```bash
+source venv/bin/activate
+```
+Once the virtual environment is activated, you should see (venv) at the beginning of the terminal prompt.
+
+- Run the following command to install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+5. Download YOLOv8 weights and download the YOLOv8 pre-trained weights:
+- Install the ultralytics package: 
+```bash
+pip install ultralytics
+```
+
+6. Verify Dataset
+- Ensure that your dataset is in the proper folder (e.g., data/images/ for the image files and data/labels/ for the label files). The dataset should be configured correctly in your project (likely in a YAML file or similar).
+
+7. Run the app.py Script
+```bash
+python app.py
+```
+
+8. Access the Application
+If app.py is running a web-based application (e.g., using Flask or FastAPI), you should be able to open a browser and go to the address http://localhost:5000/ (or whatever port your app is configured to run on). This should bring up the interface where you can interact with the parking management system.
+If your project uses something like a GUI or a different interface, follow the on-screen instructions to interact with the system.
