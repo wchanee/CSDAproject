@@ -1,0 +1,89 @@
+# Environment Setup - Object Detection (Python Interpreted Requirement & Terminal)
+# pip install for every interpreted
+Flask
+GitPython
+Jinja2
+Markdown
+MarkupSafe
+PyYAML
+Pygments
+SQLAlchemy
+Werkzeug
+absl-py ant/r4-python3-runtime
+astunparse
+attrs
+blinker certifi
+charset-normalizer click
+comet-ml configobj contourpy
+cvzone
+cycler dulwich
+everett filelock filterpy flatbuffers
+fonttools fsspec
+gast gitdb
+google-pasta grpcio
+h5py
+hydra-core
+idna imageio itsdangerous joblib
+jsonschema
+jsonschema-specifications keras kiwisolver lap
+lazy_loader libclang
+markdown-it-py
+matplotlib
+mdurl
+ml-dtypes
+mpmath
+namex
+networkx
+numpy
+omegacont
+opencv-python
+opencv-python-headless
+opt-einsum
+optree
+packaging
+pandas
+pillow
+pip
+protobuf
+psutil
+py-cpuinfo
+pyparsing
+python-box
+python-dateutil
+pytz
+referencing
+requests
+requests-toolbelt
+resampling
+rich
+rpds-py
+scikit-image
+scikit-learn
+scipy
+seaborn
+semantic-version
+sentry-sdk
+setuptools
+simplejson
+six
+smmap
+sympy
+tensorboard
+tensorboard-data-server
+tensorflow
+tensorflow-io-gcs-filesystem
+termcolor
+thop
+threadpoolctl
+tifffile
+torch
+torchvision
+tqdm
+typing_extensions
+tzdata
+ultralytics
+ultralytics-thop
+urllib3
+wheel
+wrapt
+wurlitzer

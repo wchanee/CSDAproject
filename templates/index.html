@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Car Park Surveillance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Car Park Surveillance</h1>
+            <p>Machine Learning-Based Object Detection in Shopping Parking Space</p>
+        </header>
+        <main>
+            <div class="left-column">
+                <section class="upload-section">
+                    <h2>Upload Image</h2>
+                    <div class="button-group">
+                        <label for="imageUpload" class="btn-primary">Choose Image</label>
+                        <input type="file" id="imageUpload" accept=".png, .jpeg, .jpg" style="display:none;">
+                        <button id="analyzeButton" class="btn-secondary" onclick="detectCars()" disabled>Detect Cars</button>
+                    </div>
+                    <span id="fileName"></span>
+                </section>
+                <section class="results-section">
+                    <h2>Detection Result</h2>
+                    <img id="previewImage" src="">
+                    <img id="resultImage" src="" alt="Car Detection Result" style="display: none;">
+                </section>
+            </div>
+            <div class="right-column">
+                <section class="stats-section">
+                    <h2>Current Parking Space Statistics</h2>
+                    <div class="stat-card">
+                        <div class="stat-icon">🟢</div>
+                        <div class="stat-info">
+                            <h3>Empty Spaces</h3>
+                            <p id="emptySpaces">-</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔴</div>
+                        <div class="stat-info">
+                            <h3>Occupied Spaces</h3>
+                            <p id="occupiedSpaces">-</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🅿️</div>
+                        <div class="stat-info">
+                            <h3>Total Spaces</h3>
+                            <p id="totalSpaces">-</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="history-section">
+                    <h2>Previous Records</h2>
+                    <div id="recordsList"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
